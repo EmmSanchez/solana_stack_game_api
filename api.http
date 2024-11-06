@@ -1,0 +1,23 @@
+### Get ranking
+GET http://localhost:1234/ranking?limit=5&offset=0
+ 
+### Get specific player
+GET http://localhost:1234/player?id=52j3zp2dj3lvmhp4le4dke4f22
+
+### Post a new player
+POST http://localhost:1234/register
+Content-Type: application/json
+
+  {
+    "id": "52j3mubv8ktbdegc396l5w4f22",
+    "score": 800
+  }
+
+### Update new maxScore
+PUT http://localhost:1234/player/update-score
+Content-Type: application/json
+
+{
+  "id": "52",
+  "score": 123
+}
