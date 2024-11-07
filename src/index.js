@@ -7,12 +7,14 @@ app.disable("x-powered-by");
 
 const ACCEPTED_ORIGINS = [
   "http://localhost:5173",
-  "https://solana-stack-game.vercel.app/",
+  "https://solana-stack-game.vercel.app",
 ];
 
 app.use(
   cors({
     origin: function (origin, callback) {
+      console.log("Request origin", origin);
+
       if (ACCEPTED_ORIGINS.includes(origin) || !origin) {
         callback(null, true);
       } else {
