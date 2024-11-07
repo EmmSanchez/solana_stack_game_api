@@ -5,12 +5,15 @@ import { PlayerController } from "./controllers/players.js";
 const app = express();
 app.disable("x-powered-by");
 
-const allowedOrigins = ["http://localhost:5173"];
+const ACCEPTED_ORIGINS = [
+  "http://localhost:5173",
+  "https://solana-stack-game.vercel.app/",
+];
 
 app.use(
   cors({
     origin: function (origin, callback) {
-      if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
+      if (ACCEPTED_ORIGINS.includes(origin) || !origin) {
         callback(null, true);
       } else {
         callback(new Error("Not allowed by CORS"));
