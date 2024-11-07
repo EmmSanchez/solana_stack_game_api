@@ -13,7 +13,9 @@ export class PlayerModel {
     try {
       let query = supabase.from("players").select("*");
 
-      query = query.order("max_score", { ascending: false });
+      query = query
+        .order("max_score", { ascending: false })
+        .order("create_at", { ascending: true });
 
       if (limit) {
         const start = offset || 0;
