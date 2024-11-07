@@ -21,3 +21,14 @@ Content-Type: application/json
   "id": "52",
   "score": 123
 }
+
+# DEPLOYED API
+
+### Post a new player
+POST https://solanastackgameapi-production.up.railway.app/register
+Content-Type: application/json
+
+{
+  "id": 2,
+  "score": 250,
+},

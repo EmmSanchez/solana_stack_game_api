@@ -18,10 +18,9 @@ export class PlayerController {
   static async registerPlayer(req, res) {
     try {
       const { id, score } = req.body;
-      const parsedId = parseInt(id);
       const parsedScore = parseInt(score);
 
-      const response = await PlayerModel.registerPlayer(parsedId, parsedScore);
+      const response = await PlayerModel.registerPlayer(id, parsedScore);
 
       res.json(response);
     } catch (error) {
