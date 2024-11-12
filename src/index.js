@@ -8,6 +8,7 @@ app.disable("x-powered-by");
 const ACCEPTED_ORIGINS = [
   "http://localhost:5173",
   "https://solana-stack-game.vercel.app",
+  "http://192.168.3.44:5173",
 ];
 
 app.use(
