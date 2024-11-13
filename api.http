@@ -1,8 +1,8 @@
 ### Get ranking
-GET http://localhost:1234/ranking?limit=10&offset=10
+GET http://localhost:1234/ranking?limit=0&offset=0
  
 ### Get specific player
-GET http://localhost:1234/player?id=52j3mubv8ktbdegc396l5w4f22
+GET http://localhost:1234/player?id=5oapHeEfmE2vk2rfkcneCzTrjbvJKkcgxpuB7LeAtrve
 
 ### Post a new player
 POST http://localhost:1234/register

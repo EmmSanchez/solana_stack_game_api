@@ -6,7 +6,7 @@ dotenv.config();
 
 const { Pool } = pg;
 const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
+  connectionString: process.env.DATABASE_PUBLIC_URL,
 });
 
 export class PlayerModel {
