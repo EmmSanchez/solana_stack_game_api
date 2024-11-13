@@ -1,4 +1,5 @@
-import { PlayerModel } from "../models/postgresql/players.js";
+// import { PlayerModel } from "../models/postgresql/supabase/players.js";
+import { PlayerModel } from "../models/postgresql/railway/player.js";
 
 export class PlayerController {
   static async getRanking(req, res) {
