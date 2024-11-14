@@ -9,7 +9,7 @@ const ACCEPTED_ORIGINS = [
   "http://localhost:5173",
   "https://solana-stack-game.vercel.app",
   "https://solanastackgameapi-production-b8e7.up.railway.app",
-  "https://www.skystacksgame.com/",
+  "https://www.skystacksgame.com",
 ];
 
 app.use(
